@@ -65,8 +65,10 @@
     <Compile Include="Assets\Scripts\Damage\OnCollisionDamage.cs" />
     <Compile Include="Assets\Scripts\Movement\RotateTowardsPosition.cs" />
     <Compile Include="Assets\Scripts\Movement\TargetSelector.cs" />
-    <Compile Include="Assets\Scripts\AI\ITargetReceiver.cs" />
+    <Compile Include="Assets\Scripts\AI\TargetReceiver.cs" />
     <Compile Include="Assets\Scripts\Passive\HelperMethods.cs" />
+    <Compile Include="Assets\Scripts\Damage\ProjectileSpawner.cs" />
+    <Compile Include="Assets\Scripts\Movement\ProjectileController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

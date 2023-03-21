@@ -155,7 +155,7 @@ public static class HelperMethods
 
         }
         /// <summary>
-        /// Returns true if the distance between two positions is smaller or equal to range
+        /// Returns true if the distance between two positions is smaller or equal to range. Always returns true if range is 0.
         /// </summary>
         /// <returns></returns>
         public static bool IsPositionInRange(Vector2 position, Vector2 from, float range)
@@ -163,7 +163,7 @@ public static class HelperMethods
             return range == 0 || Distance(position, from) <= range;
         }
         /// <summary>
-        /// Returns true if the distance between two positions is smaller or equal to range
+        /// Returns true if the distance between two positions is smaller or equal to range. Always returns true if range is 0.
         /// </summary>
         /// <returns></returns>
         public static bool IsPositionInRange(GameObject from, GameObject to, float range)

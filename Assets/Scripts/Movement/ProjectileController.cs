@@ -1,20 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
-public class PlaneController : MonoBehaviour
+public class ProjectileController : MonoBehaviour
 {
-
     [SerializeField][Tooltip("The maximum velocity in units per second")] float velocity;
-    [SerializeField][Tooltip("The maximum turn speed in degrees per second")] float turnSpeed;
+
+    private const int DESTROY_DELAY_MILIS = 5000;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        SetDestroyDelay();
+    }
+    private async void SetDestroyDelay()
+    {
+        await Task.Delay(DESTROY_DELAY_MILIS);
     }
 
-    // Update is called once per frame
     void Update()
     {
         MovePlane();
