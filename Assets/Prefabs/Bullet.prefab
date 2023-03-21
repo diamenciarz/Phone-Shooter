@@ -93,10 +93,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2264015829931543129}
-  - component: {fileID: 8618054436150532849}
   - component: {fileID: 1129513911}
   - component: {fileID: 1129513912}
   - component: {fileID: 1023221326898987912}
+  - component: {fileID: 3195806055669485569}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -120,20 +120,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8618054436150532849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6772048813921997505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cccc2a858e540646850870a57bcebd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: 8
-  turnSpeed: 0
 --- !u!114 &1129513911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,3 +171,16 @@ CapsuleCollider2D:
   m_Offset: {x: 0.009227513, y: 0.0000000745058}
   m_Size: {x: 0.7355471, y: 0.23739812}
   m_Direction: 1
+--- !u!114 &3195806055669485569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6772048813921997505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7718e43da81953b4b8907e9a9629eb0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: 8
