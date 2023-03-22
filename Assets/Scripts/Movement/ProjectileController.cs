@@ -8,37 +8,12 @@ public class ProjectileController : MonoBehaviour
 {
     [SerializeField][Tooltip("The maximum velocity in units per second")] float velocity;
 
-    private const int DESTROY_DELAY_MILIS = 5000;
-    private CancellationTokenSource cancellationTokenSource;
+    private const int DESTROY_DELAY = 5;
 
     // Start is called before the first frame update
     void Start()
     {
-        SetDestroyDelay();
-    }
-
-    private void OnDestroy()
-    {
-        cancellationTokenSource?.Cancel();
-    }
-
-    private async void SetDestroyDelay()
-    {
-        cancellationTokenSource = new CancellationTokenSource();
-        try
-        {
-            await Task.Delay(DESTROY_DELAY_MILIS, cancellationTokenSource.Token);
-        }
-        catch
-        {
-            return;
-        }
-        finally
-        {
-            cancellationTokenSource.Dispose();
-            cancellationTokenSource = null;
-        }
-        Destroy(gameObject);
+        Destroy(gameObject, DESTROY_DELAY);
     }
 
     void Update()

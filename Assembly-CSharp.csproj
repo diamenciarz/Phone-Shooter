@@ -56,19 +56,21 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Movement\PlaneController.cs" />
-    <Compile Include="Assets\Scripts\Effects\FollowObject.cs" />
-    <Compile Include="Assets\Scripts\Damage\DamageReceiver.cs" />
-    <Compile Include="Assets\Scripts\Damage\IDamageDealer.cs" />
-    <Compile Include="Assets\Scripts\Damage\Damage.cs" />
-    <Compile Include="Assets\Scripts\Damage\OnCollisionDamage.cs" />
-    <Compile Include="Assets\Scripts\Movement\RotateTowardsPosition.cs" />
-    <Compile Include="Assets\Scripts\Movement\TargetSelector.cs" />
     <Compile Include="Assets\Scripts\AI\TargetReceiver.cs" />
-    <Compile Include="Assets\Scripts\Passive\HelperMethods.cs" />
     <Compile Include="Assets\Scripts\Damage\ProjectileSpawner.cs" />
+    <Compile Include="Assets\Scripts\Movement\RotateTowardsPosition.cs" />
+    <Compile Include="Assets\Scripts\Damage\Damage.cs" />
+    <Compile Include="Assets\Scripts\Passive\HelperMethods.cs" />
+    <Compile Include="Assets\Scripts\Damage\OnCollisionDamage.cs" />
     <Compile Include="Assets\Scripts\Movement\ProjectileController.cs" />
+    <Compile Include="Assets\Scripts\Damage\IDamageDealer.cs" />
+    <Compile Include="Assets\Scripts\Damage\DamageReceiver.cs" />
+    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\Movement\TargetSelector.cs" />
+    <Compile Include="Assets\Scripts\Effects\FollowObject.cs" />
+    <Compile Include="Assets\Scripts\Passive\WaveSpawner.cs" />
+    <Compile Include="Assets\Scripts\Passive\Wave.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
