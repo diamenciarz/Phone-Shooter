@@ -145,6 +145,17 @@ public static class HelperMethods
         /// <summary>
         /// Get translated mouse position in 2D. Returns the position, as if mouse cursor was actually placed in that position on the map (Screen to world point)
         /// </summary>
+        /// <param name="zCoordinate"></param> 
+        /// <returns></returns>
+        public static Vector2 TranslatedTouchPosition()
+        {
+            Vector3 returnVector = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+            return returnVector;
+
+        }
+        /// <summary>
+        /// Get translated mouse position in 2D. Returns the position, as if mouse cursor was actually placed in that position on the map (Screen to world point)
+        /// </summary>
         /// <param name="zCoordinateVector"></param>
         /// <returns></returns>
         public static Vector3 TranslatedMousePosition(Vector3 zCoordinateVector)

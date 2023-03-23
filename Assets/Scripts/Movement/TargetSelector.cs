@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class TargetSelector : MonoBehaviour
 {
+    enum FollowType
+    {
+        MOUSE,
+        FINGER
+    }
+
     [SerializeField] float searchDelay = 0.05f;
-    [SerializeField] bool followMouse;
+    [SerializeField] FollowType followType;
     [SerializeField] List<TargetReceiver> targetReceivers = new List<TargetReceiver>();
 
 
@@ -22,7 +28,14 @@ public class TargetSelector : MonoBehaviour
         while (true)
         {
             Vector2 targetPosition = Vector2.zero;
-            if (followMouse)
+            if (followType == FollowType.FINGER)
+            {
+                if (Input.touchCount > 0)
+                {
+                    targetPosition = HelperMethods.VectorUtils.TranslatedTouchPosition();
+                }
+            }
+            else
             {
                 targetPosition = HelperMethods.VectorUtils.TranslatedMousePosition();
             }
